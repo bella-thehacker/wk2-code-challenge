@@ -1,12 +1,15 @@
 let itemsArray = []
 
-document.querySelector('form').addEventListener('submit', (e) =>{
+let form = document.querySelector('form')
+form.addEventListener('submit', (e) =>{
     e.preventDefault()
    handleAdd(e.target.frm1.value)
+   
 
-   itemsArray.push(frm1).
+   itemsArray.push(e.target.frm1.value).
    console.log(itemsArray)
-
+    
+   
 
 })
 
@@ -31,6 +34,8 @@ function handleAdd(list){
     li.appendChild(btn)
     document.getElementById('listItems').appendChild(li)
     
+    renderList();
+    
 }
 
 function Purchased(e){
@@ -46,9 +51,11 @@ document.querySelector('form').addEventListener('reset', (e) => {
     itemsArray = []
     console.log(itemsArray)
 
+    renderList();
+
 })
 
-
+renderList();
     
 
 

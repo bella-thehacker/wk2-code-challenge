@@ -6,7 +6,7 @@ form.addEventListener('submit', (e) =>{
    handleAdd(e.target.frm1.value)
    
 
-   itemsArray.push(e.target.frm1.value).
+   itemsArray.push(e.target.frm1.value)
    console.log(itemsArray)
     
    
@@ -34,7 +34,7 @@ function handleAdd(list){
     li.appendChild(btn)
     document.getElementById('listItems').appendChild(li)
     
-    renderList();
+    
     
 }
 
@@ -46,16 +46,16 @@ function Purchased(e){
 document.querySelector('form').addEventListener('reset', (e) => {
     const listItems = document.getElementById('listItems')
     listItems.innerHTML = ''
-    e.target.listItems.remove()
+    
 
     itemsArray = []
     console.log(itemsArray)
 
-    renderList();
+   
 
 })
 
-renderList();
+
     
 
 

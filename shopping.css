@@ -49,7 +49,7 @@ margin-top: 15%;
 
 .strikethrough{
     text-decoration: line-through;
-    color: #888;
+    color: gray;
 }
 
 .wrapper ul#listItems{

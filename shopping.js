@@ -20,7 +20,7 @@ function handleAdd(list){
     let li = document.createElement('li')
     li.className = 'list-item'
 
-    let textNode = document.createTextNode(list)
+    li.textContent = list
 
     let btn = document.createElement('button')
     btn.textContent =  ' Mark Purchased'
@@ -30,9 +30,10 @@ function handleAdd(list){
    
 
 
-    li.appendChild(textNode)
+   
     li.appendChild(btn)
     document.getElementById('listItems').appendChild(li)
+    
     
     
     
